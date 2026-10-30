@@ -1,0 +1,247 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Swiftora Logistics provides reliable delivery, courier and shipping services.">
+    <title>Swiftora Logistics | Fast & Reliable Delivery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">SWIFTORA<span>.</span></a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#tracking">Track Package</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <a href="#booking" class="nav-button">Book Delivery</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="subtitle">YOUR TRUSTED DELIVERY PARTNER</p>
+
+            <h1>Moving Your World,<br>
+                <span>One Delivery</span> At A Time.
+            </h1>
+
+            <p class="hero-description">
+                We make sending and receiving packages easier,
+                faster and more reliable. Wherever you need us,
+                Swiftora gets it there.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#booking" class="primary-btn">Send a Package</a>
+                <a href="#services" class="secondary-btn">Explore Services</a>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1000&q=85"
+                 alt="Logistics and delivery packages">
+        </div>
+    </section>
+
+    <!-- Statistics -->
+    <section class="stats">
+        <div>
+            <h2>Fast</h2>
+            <p>Delivery Service</p>
+        </div>
+        <div>
+            <h2>24/7</h2>
+            <p>Online Booking</p>
+        </div>
+        <div>
+            <h2>100%</h2>
+            <p>Customer Focused</p>
+        </div>
+        <div>
+            <h2>Global</h2>
+            <p>Shipping Vision</p>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services section" id="services">
+        <div class="section-heading">
+            <p class="subtitle">WHAT WE DO</p>
+            <h2>Our Delivery Services</h2>
+            <p>Reliable logistics solutions designed around your needs.</p>
+        </div>
+
+        <div class="service-grid">
+            <div class="service-card">
+                <div class="service-icon">📦</div>
+                <h3>Package Delivery</h3>
+                <p>Safe and reliable delivery of your parcels to their destination.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🚚</div>
+                <h3>Express Delivery</h3>
+                <p>Fast delivery solutions for urgent packages and important items.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🌍</div>
+                <h3>International Shipping</h3>
+                <p>Logistics support for shipments across international destinations.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🏢</div>
+                <h3>Business Logistics</h3>
+                <p>Delivery and transportation solutions for businesses and retailers.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tracking -->
+    <section class="tracking section" id="tracking">
+        <div class="tracking-content">
+            <p class="subtitle">PACKAGE TRACKING</p>
+            <h2>Where Is Your Package?</h2>
+            <p>Enter your tracking number to check your delivery status.</p>
+
+            <form id="trackingForm" class="tracking-form">
+                <input type="text" id="trackingNumber"
+                       placeholder="Enter tracking number"
+                       required>
+                <button type="submit">Track Package</button>
+            </form>
+
+            <div id="trackingResult" class="result"></div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about section" id="about">
+        <div class="about-image">
+            <img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=1000&q=85"
+                 alt="Delivery truck on the road">
+        </div>
+
+        <div class="about-content">
+            <p class="subtitle">ABOUT SWIFTORA</p>
+            <h2>Delivering More Than Just Packages.</h2>
+
+            <p>
+                At Swiftora Logistics, we believe every delivery represents
+                a promise. Our mission is to make transportation and package
+                delivery simple, convenient and dependable.
+            </p>
+
+            <p>
+                We are committed to providing excellent customer service,
+                efficient logistics and dependable delivery solutions.
+            </p>
+
+            <a href="#contact" class="primary-btn">Contact Our Team</a>
+        </div>
+    </section>
+
+    <!-- Booking -->
+    <section class="booking section" id="booking">
+        <div class="section-heading">
+            <p class="subtitle">GET STARTED</p>
+            <h2>Book A Delivery</h2>
+            <p>Provide your details to submit a delivery request.</p>
+        </div>
+
+        <form id="bookingForm" class="booking-form">
+            <div class="form-group">
+                <label for="customerName">Full Name</label>
+                <input type="text" id="customerName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="customerEmail">Email Address</label>
+                <input type="email" id="customerEmail" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" required>
+            </div>
+
+            <div class="form-group">
+                <label for="serviceType">Delivery Service</label>
+                <select id="serviceType" required>
+                    <option value="">Select a service</option>
+                    <option value="Standard Delivery">Standard Delivery</option>
+                    <option value="Express Delivery">Express Delivery</option>
+                    <option value="International Shipping">International Shipping</option>
+                    <option value="Business Logistics">Business Logistics</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="pickup">Pickup Location</label>
+                <input type="text" id="pickup" required>
+            </div>
+
+            <div class="form-group">
+                <label for="destination">Delivery Destination</label>
+                <input type="text" id="destination" required>
+            </div>
+
+            <div class="form-group full-width">
+                <label for="packageDetails">Package Description</label>
+                <textarea id="packageDetails" rows="4"
+                          placeholder="Describe your package..."
+                          required></textarea>
+            </div>
+
+            <button type="submit" class="primary-btn full-width">
+                Submit Delivery Request
+            </button>
+
+            <div id="bookingMessage" class="result full-width"></div>
+        </form>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact section" id="contact">
+        <div class="section-heading">
+            <p class="subtitle">GET IN TOUCH</p>
+            <h2>We Are Here To Help</h2>
+            <p>Contact our team for delivery questions and support.</p>
+        </div>
+
+        <div class="contact-details">
+            <div>📧 Email: info@swiftoralogistics.com</div>
+            <div>📞 Phone: +234 000 000 0000</div>
+            <div>📍 Location: Nigeria</div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <a href="#home" class="logo">SWIFTORA<span>.</span></a>
+        <p>Moving Your World, One Delivery At A Time.</p>
+        <p>© <span id="year"></span> Swiftora Logistics. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
